@@ -1,0 +1,52 @@
+% For hyperlinks
+\usepackage{hyperref}
+% For SI units
+\usepackage{siunitx}
+% Inline enumeration
+\usepackage[inline]{enumitem}
+% Used to define acronyms.
+\usepackage{glossaries}
+
+% For formatting figures
+\usepackage{graphicx}
+% For loading Inkscape TeX+PDF figures
+\usepackage{import}
+% For beautiful tables.
+\usepackage{booktabs}
+% Multirow cells in tables
+\usepackage{makecell, multirow}
+
+% === IEEE only ===
+% For improved citation styling
+\usepackage{cite}
+% For the ease of theorem setup.
+\usepackage{amsmath,amsthm,amssymb}
+% Define the "Problem" environment
+\newtheorem{problem}{Problem}
+
+% Use color in tables
+\usepackage[prologue,table,svgnames]{xcolor}
+
+% Workaround to make subcaption not take over captioning from the IEEEtran class
+% Subcaption is used for subfigures
+\makeatletter
+\let\MYcaption\@makecaption
+\makeatother
+\usepackage{subcaption}
+\makeatletter
+\let\@makecaption\MYcaption
+\makeatother
+% <<<<<<<<
+
+% Algorithm environment
+\usepackage[ruled,lined,noend]{algorithm2e}
+\SetKw{Continue}{continue}
+% Line numbers
+\usepackage{lineno}
+
+% For normalizing how we reference figures, tables, and equations. It should
+% be the last package to import to make sure all reference types are recognized.
+\usepackage[capitalize,noabbrev]{cleveref}
+
+% \documentclass[conference]{IEEEtran}
+% \IEEEoverridecommandlockouts

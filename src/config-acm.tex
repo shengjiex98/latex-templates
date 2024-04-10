@@ -1,0 +1,38 @@
+% For hyperlinks
+\usepackage{hyperref}
+% For SI units
+\usepackage{siunitx}
+% Inline enumeration
+\usepackage[inline]{enumitem}
+% Used to define acronyms.
+\usepackage{glossaries}
+
+% For formatting figures
+\usepackage{graphicx}
+% For loading Inkscape TeX+PDF figures
+\usepackage{import}
+% For beautiful tables.
+\usepackage{booktabs}
+% Multirow cells in tables
+\usepackage{makecell, multirow}
+
+% >>> ACM only >>>
+\usepackage{subcaption}
+% <<< ACM only <<<
+
+% Define the "Problem" environment
+\newtheorem{problem}{Problem}
+
+% Algorithm environment
+\usepackage[ruled,lined,noend]{algorithm2e}
+\SetKw{Continue}{continue}
+% Line numbers
+\usepackage{lineno}
+
+% For normalizing how we reference figures, tables, and equations. It should
+% be the last package to import to make sure all reference types are recognized.
+\usepackage[capitalize,noabbrev]{cleveref}
+
+% \documentclass[sigconf,nonacm]{acmart}
+% \settopmatter{printacmref=false}
+
